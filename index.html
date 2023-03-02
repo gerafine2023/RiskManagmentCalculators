@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/250bc90b15.js" crossorigin="anonymous"></script>
+
+    <title>Risk Managment Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="page-header">
+        <h1>Risk Managment Calculators</h1>
+        <p> Risk by Amount</p>
+        <nav id="main-nav">
+            <ul>
+                <li> <a href="#"> Home</a></li>
+                <li> <a href="index.html"> Risk by Amount</a></li>
+                <li> <a href="indextwo.html"> Risk By Percentage</a></li>
+                <li> <a href="#"> Risk By Fibunacci</a></li>
+            </ul>
+        </nav>
+    </header>
+        <main id="main-page">
+            <article>
+                <form id="risk-amount-form">
+                <div class="input-wrapper">
+                      <label for="risk-number-input">Risk Amount:</label>
+                      <input type="number" id="risk-number-input" name="risk-number-input" required>
+                      <a href="#" class="tooltip" data-tooltip="Enter the amount of risk you are willing to take on this trade."><i class="fa fa-question-circle" aria-hidden="true"></i>
+                      </a>
+
+                </div>
+                <div class="input-wrapper">
+                      <label for="stoploss-number-input">Stop loss perecentage</label>
+                      <input type="number" id="stoploss-number-input" name="stoploss-number-input" required>
+                    <a href="#" class="tooltip" data-tooltip="Enter the Number percentage at which you want to set your stop loss for this trade.(Do not inclue the %)"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                    </a>  
+                </div>
+                <button type="button" class="button" id="calculate-button">Calculate</button>
+
+
+                </form>
+
+                <p id="position-size-result">position size</p>
+            </article>
+
+        </main>
+
+
+
+    
+        <script src="script-rba.js"></script>
+        <footer class="my-footer">
+            <p>&copy; 2023 GeraFine</p>
+            <p>Contact: <a href="mailto:Gerafineai@gmail.com?subject=Website%20Contact">Gerafineai@gmail.com</a></p>
+
+        </footer>
+        
+  
+</body>
+</html>
