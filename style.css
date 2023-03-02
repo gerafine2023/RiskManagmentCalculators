@@ -103,7 +103,7 @@ input[type="number"] {
 .tooltip {
   position: relative;
   display: inline-block;
-  
+  pointer-events: none;
 }
 
 .tooltip:before {
