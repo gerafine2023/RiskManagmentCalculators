@@ -1,3 +1,26 @@
+const tooltipElems = document.querySelectorAll('.tooltip');
+tooltipElems.forEach((elem) => {
+  elem.addEventListener('click', (e) => {
+    e.preventDefault(); // prevent the link from being followed
+    // display the tooltip content
+    const tooltipContent = elem.dataset.tooltip;
+    elem.setAttribute('aria-label', tooltipContent);
+    elem.classList.add('tooltip-active');
+  });
+});
+
+// hide the tooltip when clicked outside
+document.addEventListener('click', (e) => {
+  if (!e.target.matches('.tooltip') && !e.target.closest('.tooltip')) {
+    const tooltipElems = document.querySelectorAll('.tooltip');
+    tooltipElems.forEach((elem) => {
+      elem.classList.remove('tooltip-active');
+      elem.removeAttribute('aria-label');
+    });
+  }
+});
+
+
 /*
 script for page RBA: Risk By Amount
 */
